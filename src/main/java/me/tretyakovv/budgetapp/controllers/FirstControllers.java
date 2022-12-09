@@ -8,12 +8,16 @@ public class FirstControllers {
 
     @GetMapping("")
     public String helloWorld() {
-        return "Hello";
+        return "Приложение запущено";
     }
 
-    @GetMapping("/path/to/page")
+    @GetMapping("/info")
     public String page() {
-        return "page";
+        return "Третьяков Константин"
+                + ", программа - Бюджет семьи"
+                + ", дата: 09.12.2022"
+                + ", программа для ведения бюджета"
+                ;
     }
 
 }
